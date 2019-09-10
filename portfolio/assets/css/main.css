@@ -4154,3 +4154,19 @@ input, select, textarea {										/******************UNKNOWN: all 3 selectors**
 		}
 
 	}
+
+	.unneededArticle{
+		display: none;
+	}
+
+	#twitter{
+		display:none;
+	}
+
+	#facebook{
+		display:none;
+	}
+
+	#instagram{
+		display: none;
+	}
