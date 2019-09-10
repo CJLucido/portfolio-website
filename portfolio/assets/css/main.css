@@ -52,7 +52,7 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none;								/******************UNKNOWN*****************/
 }
 
 mark {
@@ -60,29 +60,29 @@ mark {
 	color: inherit;
 }
 
-input::-moz-focus-inner {
+input::-moz-focus-inner {										/******************UNKNOWN*****************/
 	border: 0;
 	padding: 0;
 }
 
-input, select, textarea {
-	-moz-appearance: none;
+input, select, textarea {										/******************UNKNOWN: all 3 selectors*****************/
+	-moz-appearance: none;										/******************UNKNOWN: property*****************/
 	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
+	-ms-appearance: none;										/******************UNKNOWN: property*****************/
+	appearance: none;											/******************UNKNOWN: property*****************/
 }
 
 /* Basic */
 
-	@-ms-viewport {
+	@-ms-viewport {												/******************UNKNOWN: ms viewport*****************/
 		width: device-width;
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: scrollbar;							/******************UNKNOWN: property and value*****************/
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {						/******************MEDIA QUERY*****************/
 
 		html, body {
 			min-width: 320px;
@@ -94,19 +94,22 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
-		box-sizing: inherit;
+	*, *:before, *:after {										/******************UNKNOWN: before after*****************/
+		box-sizing: inherit;									/******************UNKNOWN: inherit*****************/
 	}
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");	/******************UNKNOWN:linear gradient*****************/
+		background-size: auto,
+ cover;															/******************UNKNOWN: value*****************/
+		background-attachment: fixed,							
+ fixed;															/******************UNKNOWN: why have values twice?*****************/
+		background-position: center,							/******************UNKNOWN: why have values twice?*****************/
+ center;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {			/******************UNKNOWN: selectors*****************/
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -127,7 +130,7 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1680px) {					/******************MEDIA QUERY*****************/
 
 			body, input, select, textarea {
 				font-size: 13pt;
@@ -135,7 +138,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {					/******************MEDIA QUERY*****************/
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -143,7 +146,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {					/******************MEDIA QUERY*****************/
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -151,7 +154,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {					/******************MEDIA QUERY*****************/
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -159,7 +162,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {					/******************MEDIA QUERY*****************/
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -182,7 +185,7 @@ input, select, textarea {
 			color: #ffffff !important;
 		}
 
-		a.special:not(.button) {
+		a.special:not(.button) {							/******************UNKNOWN: value(not) for class in selector*****************/
 			text-decoration: none;
 			border-bottom: 0;
 			display: block;
@@ -234,7 +237,7 @@ input, select, textarea {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
 
-	strong, b {
+	strong, b {											/******************UNKNOWN: elements strong and b*****************/
 		color: #ffffff;
 		font-weight: 600;
 	}
@@ -291,7 +294,7 @@ input, select, textarea {
 		font-size: 0.7em;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 736px) {									/******************MEDIA QUERY*****************/
 
 		h2 {
 			font-size: 1em;
@@ -303,13 +306,13 @@ input, select, textarea {
 
 	}
 
-	sub {
+	sub {																	/******************UNKNOWN: element/selector*****************/
 		font-size: 0.8em;
 		position: relative;
 		top: 0.5em;
 	}
 
-	sup {
+	sup {																	/******************UNKNOWN: element/selector*****************/
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
@@ -322,7 +325,7 @@ input, select, textarea {
 		padding: 0.5em 0 0.5em 2em;
 	}
 
-	code {
+	code {																	/******************UNKNOWN: element/selector*****************/
 		background: rgba(255, 255, 255, 0.025);
 		border-radius: 5px;
 		border: solid 2px rgba(255, 255, 255, 0.125);
@@ -332,27 +335,27 @@ input, select, textarea {
 		padding: 0.25em 0.65em;
 	}
 
-	pre {
+	pre {																	/******************UNKNOWN: element/selector*****************/
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
 
-		pre code {
+		pre code {																	/******************UNKNOWN: element/selector*****************/
 			display: block;
 			line-height: 1.75em;
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
 
-	hr {
+	hr {																	/******************UNKNOWN: element/selector*****************/
 		border: 0;
 		border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		margin: 2.5em 0;
 	}
 
-		hr.major {
+		hr.major {																	/******************UNKNOWN: element/selector*****************/
 			margin: 4em 0;
 		}
 
@@ -409,7 +412,7 @@ input, select, textarea {
 			align-items: flex-end;
 		}
 
-		.row > .imp {
+		.row > .imp {																	/******************UNKNOWN: use of greater than*****************/
 			order: -1;
 		}
 
@@ -611,7 +614,7 @@ input, select, textarea {
 					padding-top: 3.5em;
 				}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1680px) {											/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -856,7 +859,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {										/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -1101,7 +1104,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -1114,7 +1117,7 @@ input, select, textarea {
 					box-sizing: border-box;
 				}
 
-				.row.gtr-uniform > * > :last-child {
+				.row.gtr-uniform > * > :last-child {										/******************UNKNOWN: last child*****************/
 					margin-bottom: 0;
 				}
 
@@ -1346,7 +1349,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -1591,7 +1594,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -1836,7 +1839,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 360px) { 										/******************MEDIA QUERY*****************/
 
 			.row {
 				display: flex;
@@ -2089,7 +2092,7 @@ input, select, textarea {
 
 /* Form */
 
-	form {
+	form {										/******************UNKNOWN: selector/element*****************/
 		margin: 0 0 2em 0;
 	}
 
@@ -2135,10 +2138,10 @@ input, select, textarea {
 					width: calc(25% - 0.375em);
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			form > .fields {
-				width: calc(100% + 3em);
+				width: calc(100% + 3em);										/******************UNKNOWN: use of equations, calc*****************/
 				margin: -1.5em 0 2em -1.5em;
 			}
 
@@ -2161,7 +2164,7 @@ input, select, textarea {
 
 		}
 
-	label {
+	label {										/******************UNKNOWN: selector*****************/
 		color: #ffffff;
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -2172,7 +2175,7 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-	input[type="text"],
+	input[type="text"],										/******************UNKNOWN: selector's use of type*****************/
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
@@ -2188,7 +2191,7 @@ input, select, textarea {
 		border: solid 2px rgba(255, 255, 255, 0.125);
 		color: inherit;
 		display: block;
-		outline: 0;
+		outline: 0;													/******************UNKNOWN: as opposed to border?*****************/
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
@@ -2257,7 +2260,7 @@ input, select, textarea {
 		margin-right: -2em;
 		opacity: 0;
 		width: 1em;
-		z-index: -1;
+		z-index: -1;										/******************UNKNOWN: use of z-index*****************/
 	}
 
 		input[type="checkbox"] + label,
@@ -2497,17 +2500,17 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-	dl {
+	dl {										/******************UNKNONW: selector dl*****************/
 		margin: 0 0 2em 0;
 	}
 
-		dl dt {
+		dl dt {										/******************UNKNOWN: selector dt*****************/
 			display: block;
 			font-weight: 600;
 			margin: 0 0 1em 0;
 		}
 
-		dl dd {
+		dl dd {										/******************UNKNOWN: selector dd*****************/
 			margin-left: 2em;
 		}
 
@@ -2582,7 +2585,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -2636,8 +2639,8 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
-		list-style: none;
+		cursor: default;										/******************UNKNOWN: key value pair*****************/
+		list-style: none;										/******************UNKNOWN: key value pair*****************/
 		padding-left: 0;
 	}
 
@@ -2699,7 +2702,7 @@ input, select, textarea {
 				margin-top: 0;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			ul.contact li {
 				margin: 1.5em 0 0 0;
@@ -2753,7 +2756,7 @@ input, select, textarea {
 				padding-left: 0.75em;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
 				display: none;
@@ -2789,21 +2792,21 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		table tbody tr {
+		table tbody tr {										/******************UNKNOWN: selectors tbody tr*****************/
 			border: solid 1px rgba(255, 255, 255, 0.125);
 			border-left: 0;
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			table tbody tr:nth-child(2n + 1) {										/******************UNKNOWN: nth-child equation*****************/
 				background-color: rgba(255, 255, 255, 0.025);
 			}
 
-		table td {
+		table td {														/******************UNKNOWN: selector td*****************/
 			padding: 0.75em 0.75em;
 		}
 
-		table th {
+		table th {										/******************UNKNOWN: selector th*****************/
 			color: #ffffff;
 			font-size: 0.9em;
 			font-weight: 600;
@@ -2811,11 +2814,11 @@ input, select, textarea {
 			text-align: left;
 		}
 
-		table thead {
+		table thead {										/******************UNKNOWN selector thead*****************/
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
-		table tfoot {
+		table tfoot {										/******************UNKNOWN selector tfoot*****************/
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
@@ -2877,7 +2880,7 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
-		white-space: nowrap;
+		white-space: nowrap;														/******************UNKNOWN key value pair*****************/
 	}
 
 		input[type="submit"]:hover,
@@ -2918,7 +2921,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			button.primary:hover,
-			.button.primary:hover {
+			.button.primary:hover {										/******************UNKNOWN: listing element and class with same name for same design*****************/
 				background-color: #53639e;
 			}
 
@@ -2974,7 +2977,7 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			input[type="submit"],
 			input[type="reset"],
@@ -3000,7 +3003,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.features article {
+		.features article {										/******************UNKNOWN: article?*****************/
 			padding: 1.75em 1.75em 0.1em 1.75em ;
 			background-color: #353849;
 			border-radius: 5px;
@@ -3027,7 +3030,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 			.features article {
 				margin: 1em 2em 1em 0;
@@ -3036,7 +3039,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			.features article {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
@@ -3053,7 +3056,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			.features {
 				display: block;
@@ -3170,7 +3173,7 @@ input, select, textarea {
 				visibility: hidden;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			#header {
 				height: 2.75em;
@@ -3201,7 +3204,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			#header nav a[href="#menu"] {
 				width: 4em;
@@ -3245,7 +3248,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		pointer-events: none;
+		pointer-events: none;										/******************UNKNOWN: key value pair*****************/
 		-moz-transition: opacity 0.35s ease, visibility 0.35s;
 		-webkit-transition: opacity 0.35s ease, visibility 0.35s;
 		-ms-transition: opacity 0.35s ease, visibility 0.35s;
@@ -3337,7 +3340,7 @@ input, select, textarea {
 						background: #45558d;
 					}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			#menu .inner {
 				max-height: 100%;
@@ -3429,7 +3432,7 @@ input, select, textarea {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
-			padding-bottom: 0.4em;
+			padding-bottom: 0.4em;										/******************UNKNOWN: transform vs transitrion vs transition delay vs filter*****************/
 		}
 
 		#banner p {
@@ -3458,20 +3461,22 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {										/******************MEDIA QUERY*****************/
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 			#banner {
 				padding: 12em 3em 12.375em 3em ;
@@ -3484,7 +3489,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
@@ -3568,25 +3573,29 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {										/******************MEDIA QUERY*****************/
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3596,11 +3605,12 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -3874,7 +3884,7 @@ input, select, textarea {
 				}
 
 				.wrapper.spotlight.style5:before {
-					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072;
+					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072; 										/******************UNKNOWN: value: inset*****************/
 				}
 
 				.wrapper.spotlight.style5:after {
@@ -3897,7 +3907,7 @@ input, select, textarea {
 					box-shadow: inset 0 -1px 0 0 #2d3a69, 0 1px 0 0 #2d3a69;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 			.wrapper {
 				margin: 4.75em 0;
@@ -3932,7 +3942,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 			.wrapper {
 				margin: 2.5em 0;
@@ -3973,7 +3983,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -3987,7 +3997,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 360px) {										/******************MEDIA QUERY*****************/
 
 			.wrapper .inner {
 				padding: 2em 1.5em 0.1em 1.5em ;
@@ -4057,20 +4067,22 @@ input, select, textarea {
 					color: inherit;
 				}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {										/******************MEDIA QUERY*****************/
 
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 980px) {										/******************MEDIA QUERY*****************/
 
 		#footer {
 			margin-top: -4.75em;
@@ -4099,7 +4111,7 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 736px) {										/******************MEDIA QUERY*****************/
 
 		#footer {
 			margin-top: -2.5em;
@@ -4120,7 +4132,7 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {										/******************MEDIA QUERY*****************/
 
 		#footer .inner .copyright li {
 			border-left: 0;
@@ -4135,7 +4147,7 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 360px) {										/******************MEDIA QUERY*****************/
 
 		#footer .inner {
 			padding: 2em 1.5em 0.1em 1.5em ;
